@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>student_Login Page</title>
+      <link rel="stylesheet" href="C:\Users\User\Desktop\codeshastra\css\style1.css">
+</head>
+
+<body background="C:\Users\User\Desktop\codeshastra\images\advertisement-1846865_1920.jpg"> 
+
+<form id="feedBackForm" name="feedBackForm" action="/SMDirectSale/cmc/feedBackForm" method="post">
+                                            <table border="0" cellspacing="0" class="table1" cellpadding="5">
+                                            
+                                             <tbody><tr>
+                                            <td align="left" valign="top">Course<span class="mandatory"></span></td>
+                                             <td><select id="Course" name="departmentName" style="width:140px;">
+                            <option value="-1">---- Select ----</option>
+                          
+                            <option value="COMPUTERS">COMPUTERS </option>
+                          
+                            <option value="IT"> IT </option>
+                          
+                            <option value="ELEX"> ELEX </option>
+                          
+                            
+                          </select></td>
+                                              </tr>
+                                               
+                                             
+                                    <tr>
+                                    <td align="left" valign="top">Name<span class="mandatory"></span></td>
+                                                <td align="left" valign="top"><input id="name" name="name" onchange="return checkName()" type="text" value="" size="27" maxlength="50"></td> 
+                                    </tr>
+                                    
+                                              <tr>
+                                    <td align="left" valign="top">Email ID<span class="mandatory"></span></td>
+                                                <td align="left" valign="top"><input id="email" name="email" onchange="return checkMail()" type="text" value="" size="27" maxlength="50"></td> 
+                                    </tr>
+                                    
+                                           <tr>
+                                              
+                                         
+                                              <td align="left" valign="top">Contact No<span class="mandatory"></span></td>
+                                                <td align="left" valign="top"><input id="contactNo" name="contactNo" onkeyup="onlyNumber();" type="text" value="" size="27" maxlength="15"></td> 
+                                           </tr>
+                                           
+                                           <tr>
+                                                 
+                                       <td align="left" valign="top">Remarks <span class="mandatory">*</span></td>
+                                                <td align="left" valign="top"><textarea id="remark" name="remark" onkeypress="return imposeMaxLength(this, 200);" rows="5" cols="20"></textarea><font size="1" color="red">(Max:200 char.)</font></td> 
+                                           </tr>  
+      
+                                        <tr>   <td><font color="red"><b></b></font></td></tr>
+                                       <tr>  
+                                        
+                                          <td align="left" valign="top"><input type="button" id="button" value="Submit" onclick="formValidation()"></td>
+                                   <td align="right" valign="top"><input type="Button" value="Exit" onclick="window.location.href='/SMDirectSale/cmc/formUser';"></td>
+
+            </tr>
+              
+</tbody></table>
+
+
+</form>
+
+</body>
+</html>
+

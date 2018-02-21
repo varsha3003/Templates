@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Examination System</title>
+  <meta name="description" content="Examination System">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style>
+  body{
+    padding-top:40px;
+    color: black;
+    
+
+  }
+  p{
+    color:pink;
+  }
+  address{
+    color:white;
+  }
+  strong{
+    color:black;
+  }
+</style></head>
+<body background="C:\Users\User\Desktop\codeshastra\images\advertisement-1846865_1920.jpg">
+<div class="container">
+  <section>
+    <div class="page-header" id="ContactUs">
+    <h2 >Contact Us<small> Contact us for more info </small></h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <p >Send us a message or contact us from the address below</p>
+        <address>
+          <strong>Dwarkadas J.Sanghvi College of Engineering</strong><br>
+          Plot No.U-15, J.V.P.D. Scheme,<br>
+           Bhaktivedanta Swami Marg,<br>
+            Vile Parle West, Mumbai,<br>
+            Maharashtra 400056.          
+        </address>
+      </div>
+      <div class="col-lg-8">
+        <form action="" class="form-horizontal">
+          <div class="form-group">
+          <label for="user-name" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+          </div>
+          </div>
+          <div class="form-group">
+          <label for="user-email" class="col-lg-2 control-label">Email</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="user-email" placeholder="Enter your email">
+          </div>
+          </div>
+          <div class="form-group">
+          <label for="user-url" class="col-lg-2 control-label">Url of your website</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="user-url" placeholder="If you have any">
+          </div>
+          </div>
+          <div class="form-group">
+          <label for="user-msg" class="col-lg-2 control-label">Message</label>
+          <div class="col-lg-10">
+            <textarea name="user-msg" class="form-control" id="user-msg" cols="20" rows="10" placeholder="Enter your message"></textarea>
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-8 col-lg-offset-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+</div>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script type="text/javascript">
+    function initMap() {
+        var mumbai = {lat: 19.076, lng: 72.877};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: mumbai
+        });
+        var marker = new google.maps.Marker({
+          position: mumbai,
+          map: map
+        });
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6UoZsAtBH6dvOYztq7wXqNtx3hwf6LGI&callback=initMap">
+    </script>
+
+<hr>
+
+<footer>
+<div class="container text-center">
+      <h3>Subscribe for more free stuff</h3>
+      <p>Enter your name and email</p>
+      <form action="" class="form-inline">
+        <div class="form-group">
+          <label for="subscription">Subscribe</label>
+          <input type="text" class="form-control" id="subscription" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="text" class="form-control" id="email" placeholder="Your Email Address">
+        </div>
+        <button type="submit" class="btn btn-info">Subscribe</button>
+      </form>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="http://www.twitter.com/wikidic">Twitter</a></li>
+        <li><a href="http://www.facebook.com/wikidic">Facebook</a></li>
+        <li><a href="http://www.youtube.com/wikidic">YouTube</a></li>
+      </ul>
+      <p>© Copyright @2017</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>

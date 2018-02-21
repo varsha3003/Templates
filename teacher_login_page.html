@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Teacher_Login Page</title>
+      <link rel="stylesheet" href="C:\Users\User\Desktop\codeshastra\css\style1.css">
+</head>
+
+<body background="C:\Users\User\Desktop\codeshastra\images\advertisement-1846865_1920.jpg"> 
+<form method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <header>Teacher_Login</header>
+  <label>Username <span>*</span></label>
+  <input type="username">
+  <div class="help">At least 6 character</div>
+  <label>Password <span>*</span></label>
+  <input type="password">
+  <div class="help">Use upper and lowercase lettes as well</div>
+  <button type="submit"><a href="">Login</a></button>
+</form>
+{% if error %}
+      <p>{{ error }}</p>
+    {% endif %}
+
+    <!--<form method='POST'>
+      {% csrf_token %}
+      {{form.as_p}} 
+      Username <input type="text" name="username"><br>
+      Password <input type="password" name="password"><br>
+      <input type="submit" name="Submit">
+    </form>
+    {% if error %}
+      <p>{{ error }}</p>
+    {% endif %}-->
+   
+ 
+
+
+</body>
+</html>
+
